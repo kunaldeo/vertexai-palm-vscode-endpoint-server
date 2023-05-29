@@ -18,7 +18,7 @@ class VertexGenerator(GeneratorBase):
         self.model_name = model_name
         self.location = location
         self.api_endpoint = f"{self.location}-aiplatform.googleapis.com"
-        self.endpoint = f"projects/{self.project_id}/locations/us-central1/publishers/google/models/{self.model_name}"
+        self.endpoint = f"projects/{self.project_id}/locations/{self.location}/publishers/google/models/{self.model_name}"
 
     def generate(self, query: str, parameters: dict = None) -> str:
         # The AI Platform services require regional API endpoints.
