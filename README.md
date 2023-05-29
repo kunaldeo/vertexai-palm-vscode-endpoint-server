@@ -6,7 +6,7 @@ Vertex AI Palm VSCode server for [huggingface-vscdoe](https://github.com/hugging
 
 ```shell
 pip install -r requirements.txt
-python main.py
+python main.py --project_id <gcp project name>
 ```
 
 Fill `http://localhost:8000/api/generate/` into `Hugging Face Code > Model ID or Endpoint` in VSCode.
