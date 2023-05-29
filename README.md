@@ -1,8 +1,6 @@
-# Hugging Face VSCode Endpoint Server
+# Vertex AI Palm VSCode Endpoint Server
 
-starcoder server for [huggingface-vscdoe](https://github.com/huggingface/huggingface-vscode) custom endpoint.
-
-**Can't handle distributed inference very well yet.**
+Vertex AI Palm VSCode server for [huggingface-vscdoe](https://github.com/huggingface/huggingface-vscode) custom endpoint.
 
 ## Usage
 
@@ -16,6 +14,6 @@ Fill `http://localhost:8000/api/generate/` into `Hugging Face Code > Model ID or
 ## API
 
 ```shell
-curl -X POST http://localhost:8000/api/generate/ -d '{"inputs": "", "parameters": {"max_new_tokens": 64}}'
+curl -X POST http://localhost:8000/api/generate/ -d '{"inputs": "", "parameters": {"maxOutputTokens": 64}}'
 # response = {"generated_text": ""}
 ```
