@@ -11,7 +11,7 @@ python main.py --project_id <gcp project name>
 
 Fill `http://localhost:8000/api/generate/` into `Hugging Face Code > Model ID or Endpoint` in VSCode.
 
-If you are using Palm api you may want to change the following settings as well:
+If you are using Palm api you may want to change the following settings as well in VSCode's settings.json file:
 ```
 "HuggingFaceCode.endToken": "",
 "HuggingFaceCode.middleToken": "",
